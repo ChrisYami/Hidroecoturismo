@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fauna | Lago Moa</title>
+<meta name="description" content="Inventario de fauna del Lago Moa y su cuenca: jaguar, londra, tapir, caimán negro, aves y peces, con su estado de conservación.">
+<meta name="theme-color" content="#12332a">
+<link rel="icon" href="img/rombo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="nav on-dark" id="nav">
+  <div class="wrap">
+    <!-- Nombre del sitio pendiente: por ahora solo se muestra el rombo como marca -->
+    <a class="brand" href="index.html" aria-label="Inicio">
+      <img src="img/rombo.svg" alt="" width="26" height="26">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Lago Moa</a></li>
+      <li><a href="pueblo-tacana.html">Pueblo Tacana</a></li>
+      <li><a href="fauna.html" class="is-active" aria-current="page">Fauna</a></li>
+      <li><a href="experiencias.html">Experiencias</a></li>
+      <li><a href="paquetes.html">Paquetes</a></li>
+      <li><a href="apoya.html">Apoya</a></li>
+      <li class="has-sub">
+        <button class="sub-btn" type="button" aria-expanded="false" aria-controls="subMas">Más</button>
+        <ul class="sub" id="subMas">
+          <li><a href="como-llegar.html">Cómo llegar</a></li>
+          <li><a href="ciencia.html">Ciencia e hidrología</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+        </ul>
+      </li>
+      <li><a class="btn btn-primary" href="reservas.html">Reservar visita</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="page-head on-dark">
+  <div class="wrap">
+    <p class="eyebrow">Inventario científico UMSA</p>
+    <h1>Fauna del Lago Moa y su cuenca</h1>
+    <p>Especies registradas por el Instituto de Ecología y el CIMTA en la cuenca del Lago Moa. Muchas de ellas están amenazadas: el turismo responsable es una de las mejores herramientas para protegerlas.</p>
+  </div>
+</section>
+<div class="band" aria-hidden="true"></div>
+<section class="sec">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="Filtrar especies por grupo"><button type="button" aria-pressed="true" data-f="todos">Todos (48)</button><button type="button" aria-pressed="false" data-f="mamiferos">Mamíferos (19)</button><button type="button" aria-pressed="false" data-f="aves">Aves (16)</button><button type="button" aria-pressed="false" data-f="peces">Peces (7)</button><button type="button" aria-pressed="false" data-f="reptiles">Reptiles (6)</button></div>
+    <p class="count" id="spCount" aria-live="polite">Mostrando 48 de 48 especies</p>
+    <div class="sp-grid" id="spGrid">
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/jaguar.webp" alt="Jaguar (Yaguareté) (Panthera onca)" width="440" height="293" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Jaguar (Yaguareté)</h3>
+          <p class="sci">Panthera onca</p>
+          <p>El felino más grande de América y máximo depredador de la Amazonía. Su presencia en la cuenca del Lago Moa es un bioindicador clave de la salud del ecosistema boscoso.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Bosque húmedo tropical y riberas densas del Lago Moa.</p><p><strong>Amenaza.</strong> Pérdida de hábitat por quemas y fragmentación de corredores biológicos.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/londra.webp" alt="Londra (Nutria Gigante de Río) (Pteronura brasiliensis)" width="467" height="262" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-EN">EN · En peligro</span>
+          <h3>Londra (Nutria Gigante de Río)</h3>
+          <p class="sci">Pteronura brasiliensis</p>
+          <p>La nutria más grande del planeta (hasta 1.8 metros). Especie gregaria y sociable que habita en ríos lentos y lagunas de aguas claras del norte paceño.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Espejo de agua del Lago Moa y afluentes del Río Beni.</p><p><strong>Amenaza.</strong> Contaminación de fuentes de agua y cacería histórica.</p><p class="credit">Foto: laregion.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/tapir.webp" alt="Tapir Amazónico o Anta (Tapirus terrestris)" width="419" height="315" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Tapir Amazónico o Anta</h3>
+          <p class="sci">Tapirus terrestris</p>
+          <p>Considerado el jardinero del bosque por su vital función de dispersión de semillas de árboles frutales nativos a largas distancias.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Bosques riparios y zonas de vegetación densa cercanas al agua.</p><p><strong>Amenaza.</strong> Cacería furtiva y tala de bosques primarios.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/capibara.webp" alt="Capibara o Carpincho (Hydrochoerus hydrochaeris)" width="453" height="302" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Capibara o Carpincho</h3>
+          <p class="sci">Hydrochoerus hydrochaeris</p>
+          <p>El roedor viviente más grande del mundo. Excelente nadador y herbívoro fundamental en la regulación de la vegetación acuática del lago.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Bancos de arena, marismas y orillas de la cuenca del Lago Moa.</p><p><strong>Amenaza.</strong> Caza no sostenible y alteración de humedales.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/pejichi.webp" alt="Pejichi (Armadillo Gigante) (Priodontes maximus)" width="452" height="301" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-EN">EN · En peligro</span>
+          <h3>Pejichi (Armadillo Gigante)</h3>
+          <p class="sci">Priodontes maximus</p>
+          <p>Puede superar los 50 kg de peso y posee garras de hasta 20 cm. Es un ingeniero del ecosistema cuyas madrigueras sirven de refugio a decenas de otras especies.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Suelo selvático no inundable y serranías de Tumupasa.</p><p><strong>Amenaza.</strong> Deforestación y expansión agrícola intensiva.</p><p class="credit">Foto: laregion.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/marimono.webp" alt="Marimono o Mono Araña (Ateles chamek)" width="458" height="307" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-EN">EN · En peligro</span>
+          <h3>Marimono o Mono Araña</h3>
+          <p class="sci">Ateles chamek</p>
+          <p>Primate ágil de cola prensil que habita el dosel superior del bosque primario. Es muy sensible a la alteración humana de su bosque.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Copa de los árboles más altos del bosque primario Tacana.</p><p><strong>Amenaza.</strong> Fragmentación de hábitat por tala maderera.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/oso-bandera.webp" alt="Oso Bandera (Oso Hormiguero Gigante) (Myrmecophaga tridactyla)" width="459" height="306" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Oso Bandera (Oso Hormiguero Gigante)</h3>
+          <p class="sci">Myrmecophaga tridactyla</p>
+          <p>Con su lengua de hasta 60 cm consume miles de hormigas y termitas al día. Inconfundible por su cola en forma de bandera.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: fcbc.org.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/paraba-escarlata.webp" alt="Paraba Escarlata o Bandera (Ara macao)" width="250" height="361" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Paraba Escarlata o Bandera</h3>
+          <p class="sci">Ara macao</p>
+          <p>Majestuosa ave de plumaje rojo, amarillo y azul que vuela en parejas monógamas sobre el dosel de la selva del Lago Moa.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Nidos en troncos huecos de palmeras y árboles maduros.</p><p><strong>Amenaza.</strong> Tráfico ilegal de fauna silvestre y tala de nidos.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/tucan-garganta-blanca.webp" alt="Tucán de Garganta Blanca (Ramphastos tucanus)" width="351" height="323" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Tucán de Garganta Blanca</h3>
+          <p class="sci">Ramphastos tucanus</p>
+          <p>Reconocible por su llamado resonante característico y su gran pico adaptado para alimentarse de frutos selváticos.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Dosel de bosque primario y bordes de claros.</p><p><strong>Amenaza.</strong> Deforestación por chaqueos no controlados.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/piraiba.webp" alt="Piraíba o Pez Gato Gigante (Brachyplatystoma filamentosum)" width="480" height="224" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-EN">EN · En peligro</span>
+          <h3>Piraíba o Pez Gato Gigante</h3>
+          <p class="sci">Brachyplatystoma filamentosum</p>
+          <p>El siluriforme más grande de Sudamérica, puede pesar más de 150 kg. Migra miles de kilómetros por los afluentes amazónicos.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Aguas profundas y pozas del Lago Moa y Río Beni.</p><p><strong>Amenaza.</strong> Interrupción de rutas migratorias y represas.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="reptiles">
+        <div class="photo"><img src="img/fauna/caiman-negro.webp" alt="Caimán Negro o Yacaré Negro (Melanosuchus niger)" width="473" height="338" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Caimán Negro o Yacaré Negro</h3>
+          <p class="sci">Melanosuchus niger</p>
+          <p>El depredador acuático por excelencia de la cuenca amazónica boliviana, alcanzando hasta 5 metros de longitud. Esencial para la salud piscícola del lago.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Aguas tranquilas, meandros y lagunas del Lago Moa.</p><p><strong>Amenaza.</strong> Cacería histórica por su piel y conflicto con pescadores.</p><p class="credit">Foto: latinrootstravel.com</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="reptiles">
+        <div class="photo"><img src="img/fauna/peta-rio.webp" alt="Peta de Agua (Tortuga de Río) (Podocnemis unifilis)" width="480" height="320" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Peta de Agua (Tortuga de Río)</h3>
+          <p class="sci">Podocnemis unifilis</p>
+          <p>Tortuga acuática emblemática de la Amazonía. Deposita sus huevos en las playas de arena durante la época seca (agosto-septiembre).</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Playas ribereñas del Río Beni y meandros del Lago Moa.</p><p><strong>Amenaza.</strong> Saqueo intensivo de nidos y huevos de playa.</p><p class="credit">Foto: fcbc.org.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/ciervo-pantanos.webp" alt="Ciervo de los Pantanos (Blastocerus dichotomus)" width="451" height="300" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Ciervo de los Pantanos</h3>
+          <p class="sci">Blastocerus dichotomus</p>
+          <p>El cérvido más grande de Sudamérica con pezuñas adaptadas a caminar sobre suelos fangosos e inundados sin hundirse.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Sabanas húmedas y zonas ribereñas periféricas al lago.</p><p><strong>Amenaza.</strong> Drenaje de humedales y enfermedades transmitidas por ganado.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/chancho-tropero.webp" alt="Chancho Tropero (Pecarí Labiado) (Tayassu pecari)" width="395" height="310" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Chancho Tropero (Pecarí Labiado)</h3>
+          <p class="sci">Tayassu pecari</p>
+          <p>Recorre la selva en grandes manadas de decenas de individuos. Es presa clave del jaguar y un gran dispersor de semillas.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/taitetu.webp" alt="Taitetú (Pecarí de Collar) (Pecari tajacu)" width="406" height="302" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Taitetú (Pecarí de Collar)</h3>
+          <p class="sci">Pecari tajacu</p>
+          <p>Pecarí más pequeño, reconocible por la franja clara alrededor del cuello. Vive en grupos familiares en el bosque.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: cma.sarem.org.ar</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/jochi-colorado.webp" alt="Jochi Colorado (Calucha) (Dasyprocta variegata)" width="453" height="302" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Jochi Colorado (Calucha)</h3>
+          <p class="sci">Dasyprocta variegata</p>
+          <p>Roedor mediano diurno muy importante para la regeneración natural de la castaña y árboles de copa grande.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Suelo selvático y sotobosque de la TCO Tacana.</p><p><strong>Amenaza.</strong> Presión por asentamientos humanos.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/manechi.webp" alt="Manechi Colorado (Alouatta sara)" width="200" height="298" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Manechi Colorado</h3>
+          <p class="sci">Alouatta sara</p>
+          <p>Su potente aullido se escucha a kilómetros al amanecer. Es un mono endémico de Bolivia y se alimenta principalmente de hojas.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/mono-silvador.webp" alt="Mono Silvador (Sapajus apella)" width="480" height="640" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Mono Silvador</h3>
+          <p class="sci">Sapajus apella</p>
+          <p>Muy inteligente: usa piedras para abrir frutos y semillas duras. Vive en tropas ruidosas que recorren el bosque.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: animalia.bio</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/mono-leoncito.webp" alt="Mono Leoncito (Mico melanurus)" width="405" height="307" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Mono Leoncito</h3>
+          <p class="sci">Mico melanurus</p>
+          <p>Pequeño primate de cola negra que se alimenta de frutos, insectos y la savia que extrae de la corteza de los árboles.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: fcbc.org.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/mono-nocturno.webp" alt="Mono Nocturno (Aotus boliviensis)" width="422" height="316" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Mono Nocturno</h3>
+          <p class="sci">Aotus boliviensis</p>
+          <p>Uno de los pocos monos activos de noche, con grandes ojos adaptados a la oscuridad. Vive en parejas estables.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/martucha.webp" alt="Martucha o Mono Michi (Potos flavus)" width="325" height="323" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Martucha o Mono Michi</h3>
+          <p class="sci">Potos flavus</p>
+          <p>Mamífero nocturno de cola prensil, pariente del coatí. Se alimenta de frutos y néctar, y poliniza flores del dosel.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/coati.webp" alt="Tejón o Coatí (Nasua nasua)" width="354" height="299" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Tejón o Coatí</h3>
+          <p class="sci">Nasua nasua</p>
+          <p>De hocico largo y cola anillada, recorre el suelo y los árboles en grupos buscando insectos y frutos.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/armadillo-nariz-grande.webp" alt="Armadillo de Nariz Grande (Dasypus kappleri)" width="480" height="360" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Armadillo de Nariz Grande</h3>
+          <p class="sci">Dasypus kappleri</p>
+          <p>Armadillo de hábitos nocturnos que excava madrigueras cerca de cursos de agua en el bosque húmedo.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: gbif.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="mamiferos">
+        <div class="photo"><img src="img/fauna/carachupa.webp" alt="Zarigüeya o Carachupa (Didelphis marsupialis)" width="449" height="299" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Zarigüeya o Carachupa</h3>
+          <p class="sci">Didelphis marsupialis</p>
+          <p>Marsupial que carga a sus crías en una bolsa. Ayuda a controlar insectos y dispersa semillas.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: enciclovida.mx</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/tucan-pico-acanalado.webp" alt="Tucán de Pico Acanalado (Ramphastos vitellinus)" width="406" height="305" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Tucán de Pico Acanalado</h3>
+          <p class="sci">Ramphastos vitellinus</p>
+          <p>Tucán de pecho amarillo intenso y pico negro. Dispersa las semillas de numerosos árboles del bosque.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/pava-mutun.webp" alt="Pava Mutún (Crax fasciolata)" width="415" height="312" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Pava Mutún</h3>
+          <p class="sci">Crax fasciolata</p>
+          <p>Ave terrestre de gran tamaño con un vistoso copete rizado en la cabeza. Su canto retumba al amanecer en la selva tacana.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Suelo de bosques ribereños poco perturbados.</p><p><strong>Amenaza.</strong> Caza para consumo y deforestación acelerada.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/trompetero.webp" alt="Trompetero Aligrís o Yacamí (Psophia crepitans)" width="250" height="310" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Trompetero Aligrís o Yacamí</h3>
+          <p class="sci">Psophia crepitans</p>
+          <p>Ave gregaria y guardiana de la selva que emite sonidos profundos de alerta ante la presencia de serpientes o extraños.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Bosques continuos con abundante hojarasca.</p><p><strong>Amenaza.</strong> Fragmentación de corredores continuos de selva.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/loro-hablador.webp" alt="Loro Hablador (Amazona aestiva)" width="403" height="294" loading="lazy"></div>
+        <div class="sp-body">
+          
+          <h3>Loro Hablador</h3>
+          <p class="sci">Amazona aestiva</p>
+          <p>Loro de frente turquesa famoso por imitar sonidos. Muy perseguido por el comercio ilegal de mascotas.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/cotorra.webp" alt="Cotorra de Cabeza Oscura (Aratinga weddellii)" width="321" height="321" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Cotorra de Cabeza Oscura</h3>
+          <p class="sci">Aratinga weddellii</p>
+          <p>Pequeño loro verde que vuela en bandadas bulliciosas sobre las orillas del lago y los bosques inundables.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/pava-amazonica.webp" alt="Pava Amazónica (Penelope jacquacu)" width="354" height="277" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Pava Amazónica</h3>
+          <p class="sci">Penelope jacquacu</p>
+          <p>Ave grande de color oscuro con papada roja. Se alimenta de frutos y es importante dispersora de semillas.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/pava-campanilla.webp" alt="Pava Campanilla o Rajadora (Pipile cumanensis)" width="431" height="303" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Pava Campanilla o Rajadora</h3>
+          <p class="sci">Pipile cumanensis</p>
+          <p>De plumaje negro con cresta blanca y garganta azul. Su aleteo produce un sonido característico al volar.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/perdiz-grande.webp" alt="Perdiz Grande (Tinamus major)" width="403" height="302" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-NT">NT · Casi amenazado</span>
+          <h3>Perdiz Grande</h3>
+          <p class="sci">Tinamus major</p>
+          <p>Ave terrestre discreta cuyo canto melodioso se escucha al anochecer. Pone huevos de un brillante color turquesa.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: ebird.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/perdiz-ondulada.webp" alt="Perdiz Ondulada (Crypturellus undulatus)" width="480" height="360" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Perdiz Ondulada</h3>
+          <p class="sci">Crypturellus undulatus</p>
+          <p>Perdiz de plumaje finamente ondulado, más fácil de oír que de ver en el sotobosque y bosques ribereños.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: birdsofbolivia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/bataraa.webp" alt="Batará Hombroblanco (Thamnophilus aethiops)" width="330" height="247" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Batará Hombroblanco</h3>
+          <p class="sci">Thamnophilus aethiops</p>
+          <p>Pequeña ave insectívora del sotobosque; el macho es negro con pequeñas manchas blancas en los hombros.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/bolio.webp" alt="Bolio Semiacollarado (Malacoptila semicincta)" width="286" height="300" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Bolio Semiacollarado</h3>
+          <p class="sci">Malacoptila semicincta</p>
+          <p>Ave de aspecto esponjado que espera inmóvil en una rama para cazar insectos al vuelo.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: birdsoftheworld.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/hormiguerito.webp" alt="Hormiguerito Gris (Myrmotherula menetriesii)" width="412" height="309" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Hormiguerito Gris</h3>
+          <p class="sci">Myrmotherula menetriesii</p>
+          <p>Diminuta ave gris que se une a bandadas mixtas para buscar insectos entre el follaje.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/trepador-pardo.webp" alt="Trepador Pardo (Dendrocincla fuliginosa)" width="298" height="331" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Trepador Pardo</h3>
+          <p class="sci">Dendrocincla fuliginosa</p>
+          <p>Trepa por los troncos apoyándose en su cola rígida y sigue a las hormigas guerreras para atrapar insectos.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="aves">
+        <div class="photo"><img src="img/fauna/zopilote.webp" alt="Zopilote Negro (Coragyps atratus)" width="426" height="317" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Zopilote Negro</h3>
+          <p class="sci">Coragyps atratus</p>
+          <p>Carroñero que cumple una función sanitaria esencial al eliminar animales muertos del ecosistema.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: ebird.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/surubi.webp" alt="Surubí Pintado (Pseudoplatystoma corruscans)" width="250" height="167" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Surubí Pintado</h3>
+          <p class="sci">Pseudoplatystoma corruscans</p>
+          <p>Pez de gran valor biológico y alimentario para el pueblo Tacana, caracterizado por su cuerpo plateado con manchas negras.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Cauces profundos y desembocaduras en el Lago Moa.</p><p><strong>Amenaza.</strong> Sobrepesca comercial y disminución del caudal hídrico.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/pirana.webp" alt="Piraña de Vientre Rojo (Pygocentrus nattereri)" width="480" height="239" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Piraña de Vientre Rojo</h3>
+          <p class="sci">Pygocentrus nattereri</p>
+          <p>Especie clave en la limpieza de los ecosistemas acuáticos al alimentarse de peces enfermos y carroña.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Zonas sombreadas y orillas con raíces sumergidas.</p><p><strong>Amenaza.</strong> Contaminación de aguas por agroquímicos.</p><p class="credit">Foto: tarija.com.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/anguila-electrica.webp" alt="Anguila Eléctrica (Electrophorus electricus)" width="335" height="335" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Anguila Eléctrica</h3>
+          <p class="sci">Electrophorus electricus</p>
+          <p>Capaz de generar descargas bioeléctricas de hasta 600 voltios tanto para cazar como para orientarse en aguas turbias.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Fondos lodosos y aguas remansadas con vegetación.</p><p><strong>Amenaza.</strong> Sedimentación por erosión de la cuenca.</p><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/tambaqui.webp" alt="Tambaquí (Pacú) (Piaractus brachypomus)" width="435" height="259" loading="lazy"></div>
+        <div class="sp-body">
+          
+          <h3>Tambaquí (Pacú)</h3>
+          <p class="sci">Piaractus brachypomus</p>
+          <p>Pariente vegetariano de la piraña que se alimenta de frutos caídos al agua en temporada de inundación.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: uabjb.edu.bo</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/benton.webp" alt="Bentón o Pez Lobo (Hoplias malabaricus)" width="453" height="257" loading="lazy"></div>
+        <div class="sp-body">
+          
+          <h3>Bentón o Pez Lobo</h3>
+          <p class="sci">Hoplias malabaricus</p>
+          <p>Depredador emboscador de dientes afilados que habita lagunas y remansos con vegetación.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="peces">
+        <div class="photo"><img src="img/fauna/raya.webp" alt="Raya de Agua Dulce (Potamotrygonidae)" width="454" height="244" loading="lazy"></div>
+        <div class="sp-body">
+          
+          <h3>Raya de Agua Dulce</h3>
+          <p class="sci">Potamotrygonidae</p>
+          <p>Descansa camuflada en el fondo arenoso. Su aguijón es defensivo: conviene arrastrar los pies al caminar en el agua.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="reptiles">
+        <div class="photo"><img src="img/fauna/anaconda-beniana.webp" alt="Anaconda Beniana (Eunectes beniensis)" width="464" height="390" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-NT">NT · Casi amenazado</span>
+          <h3>Anaconda Beniana</h3>
+          <p class="sci">Eunectes beniensis</p>
+          <p>Especie endémica de la cuenca amazónica del Beni y norte paceño, descrita formalmente en años recientes como especie única.</p>
+          <details><summary>Hábitat y amenazas</summary><p><strong>Hábitat.</strong> Pantanos poco profundos y vegetación flotante.</p><p><strong>Amenaza.</strong> Destrucción de humedales por drenaje.</p><p class="credit">Foto: Don Johnston · facebook.com/CienciaconCiencia20</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="reptiles">
+        <div class="photo"><img src="img/fauna/peta-seco.webp" alt="Peta del Seco (Tortuga de Patas Amarillas) (Chelonoidis denticulatus)" width="465" height="311" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-VU">VU · Vulnerable</span>
+          <h3>Peta del Seco (Tortuga de Patas Amarillas)</h3>
+          <p class="sci">Chelonoidis denticulatus</p>
+          <p>Tortuga terrestre del bosque que se alimenta de frutos caídos. Puede vivir varias décadas.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="reptiles">
+        <div class="photo"><img src="img/fauna/lagarto-overo.webp" alt="Lagarto Overo (Tupinambis teguixin)" width="431" height="287" loading="lazy"></div>
+        <div class="sp-body">
+          <span class="badge b-LC">LC · Preocupación menor</span>
+          <h3>Lagarto Overo</h3>
+          <p class="sci">Tupinambis teguixin</p>
+          <p>Gran lagarto de bandas claras y oscuras que recorre el suelo del bosque buscando huevos, insectos y frutos.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: inaturalist.org</p></details>
+        </div>
+      </article>
+      <article class="sp" data-cat="reptiles">
+        <div class="photo"><img src="img/fauna/pucarara.webp" alt="Pucarara (Cascabel Muda) (Lachesis muta)" width="476" height="317" loading="lazy"></div>
+        <div class="sp-body">
+          
+          <h3>Pucarara (Cascabel Muda)</h3>
+          <p class="sci">Lachesis muta</p>
+          <p>La víbora más larga de América. Es esquiva y nocturna; los guías enseñan a reconocerla y a mantener distancia.</p>
+          <details><summary>Hábitat y amenazas</summary><p class="credit">Foto: es.wikipedia.org</p></details>
+        </div>
+      </article>
+    </div>
+    <div class="aviso">
+      <p>Estados de conservación según la Lista Roja de la UICN y registros del equipo de ecología. Las fotografías provienen de las fuentes indicadas en cada ficha. Las especies sin etiqueta no tienen una evaluación confirmada.</p>
+      <ul class="legend"><li><span class="badge b-CR">CR</span> Peligro crítico</li><li><span class="badge b-EN">EN</span> En peligro</li><li><span class="badge b-VU">VU</span> Vulnerable</li><li><span class="badge b-NT">NT</span> Casi amenazado</li><li><span class="badge b-LC">LC</span> Preocupación menor</li></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot on-dark">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <!-- Título del sitio pendiente -->
+        <a class="brand" href="index.html" aria-label="Inicio"><img src="img/rombo.svg" alt="" width="26" height="26"></a>
+        <p>Modelo comunitario de ecoturismo científico y de aventura para la protección del segundo lago más grande de La Paz y el empoderamiento de la mujer en la TCO Tacana.</p>
+        <p>UMSA · ASDI · CIMTA · CIPTA · IIHH · IICSTUR</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul><li><a href="index.html">Lago Moa</a></li><li><a href="pueblo-tacana.html">Pueblo Tacana</a></li><li><a href="fauna.html">Fauna</a></li><li><a href="experiencias.html">Experiencias</a></li><li><a href="paquetes.html">Paquetes</a></li><li><a href="apoya.html">Apoya</a></li><li><a href="como-llegar.html">Cómo llegar</a></li><li><a href="ciencia.html">Ciencia e hidrología</a></li><li><a href="faq.html">Preguntas frecuentes</a></li></ul>
+      </div>
+      <div>
+        <h4>Aliados</h4>
+        <ul>
+          <li><a href="https://umsa.bo">UMSA Bolivia</a></li>
+          <li>CIMTA</li>
+          <li>CIPTA · TCO Tacana</li>
+          <li>ASDI Suecia</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto del proyecto</h4>
+        <!-- Dirección y contacto por definir: escribir dentro de estos espacios -->
+        <div class="foot-blank">
+          <span class="blank"></span>
+          <span class="blank"></span>
+          <span class="blank"></span>
+        </div>
+      </div>
+    </div>
+    <p class="legal">© 2026-2027 Proyecto HidroEcoTurismo Lago Moa · UMSA / TCO Tacana. Todos los derechos reservados.<br>Fotografías: equipo del proyecto UMSA – CIMTA y fuentes indicadas en cada especie.</p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
